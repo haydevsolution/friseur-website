@@ -222,10 +222,27 @@
 
 /* --- Innung: Leistungen --- */
 
-.benefit-cols {
+.benefit-groups {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 0 48px;
+  gap: 18px;
+}
+
+.benefit-group {
+  border: 1px solid var(--footer-border);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.benefit-group__tag {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--orange);
+  letter-spacing: 0.12em;
 }
 
 .benefit-list {
@@ -239,17 +256,24 @@
 .benefit-list li {
   display: flex;
   gap: 12px;
-  padding: 13px 0;
-  border-top: 1px solid var(--footer-border);
+  padding: 11px 0;
   font-size: 14px;
   line-height: 1.55;
   color: #e8e0d5;
+}
+
+.benefit-list li + li {
+  border-top: 1px solid var(--footer-border);
 }
 
 .benefit-list li::before {
   content: '✂';
   color: var(--orange);
   font-weight: 800;
+}
+
+.benefit-list strong {
+  color: #fff;
 }
 
 /* --- Innung: Beiträge --- */
