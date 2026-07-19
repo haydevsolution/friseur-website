@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Become a Member — The Hairdressers’ Guild Stuttgart · Ludwigsburg</title>
+<meta name="description" content="Join the community: membership in the hairdressers’ guild Stuttgart-Ludwigsburg — benefits, fees and enquiry.">
+<link rel="icon" type="image/png" href="../assets/logo-f.png">
+<link rel="stylesheet" href="../css/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/pages.css">
+<script src="../js/demo.js" defer></script>
+<script src="../js/nav.js" defer></script>
+<link rel="alternate" hreflang="de" href="https://haydevsolution.github.io/friseur-website/mitglied-werden.html">
+<link rel="alternate" hreflang="en" href="https://haydevsolution.github.io/friseur-website/en/mitglied-werden.html">
+<link rel="alternate" hreflang="x-default" href="https://haydevsolution.github.io/friseur-website/mitglied-werden.html">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="../assets/logo-f.png" alt="Die Friseurinnung" width="37" height="48" class="brand__logo">
+    <span class="brand__text">
+      <span class="brand__name">die FRISEUR<em>INNUNG</em></span>
+      <span class="brand__region">STUTTGART · LUDWIGSBURG</span>
+    </span>
+  </a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu">
+    <span class="nav-toggle__icon"></span>
+  </button>
+  <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+    <a href="index.html" class="site-nav__link">Home</a>
+    <a href="innung.html" class="site-nav__link">The Guild</a>
+    <a href="ausbildung.html" class="site-nav__link">Training</a>
+    <a href="karriere.html" class="site-nav__link">Careers</a>
+    <a href="fortbildung.html" class="site-nav__link">Seminars</a>
+    <a href="aktuelles.html" class="site-nav__link">News</a>
+    <a href="mitglied-werden.html" class="site-nav__link site-nav__link--active" aria-current="page">Become a Member</a>
+    <span class="lang-switch">
+      <a href="../mitglied-werden.html" class="lang-switch__item">DE</a>
+      <span class="lang-switch__item lang-switch__item--active">EN</span>
+    </span>
+    <a href="login.html" class="btn-member">Member Area</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="join" aria-label="Become a member">
+    <div class="join__content">
+      <span class="eyebrow">BECOME A MEMBER</span>
+      <h1 class="page-title" style="font-size:clamp(40px,5.5vw,60px);line-height:1.02">Become part of the <em>community</em>.</h1>
+      <p class="split__text">A membership that pays off: free legal and collective wage advice, up to 50&#8201;% off specialist seminars, lower examination fees and strong framework agreements.</p>
+      <div class="perk-list">
+        <div class="perk">Example: journeyman examination part 1 + 2 — <strong>€300 saved</strong></div>
+        <div class="perk">Legal &amp; business advice — <strong>free of charge</strong></div>
+        <div class="perk">GEMA fees — <strong>20&#8201;% below standard rate</strong></div>
+      </div>
+      <a href="innung.html#ersparnis" style="font-size:14px;font-weight:700;color:var(--orange)">View all benefits &amp; fees →</a>
+      <span class="badge-wip" style="align-self:flex-start;font-size:11.5px;padding:9px 16px">✂ PAGE UNDER CONSTRUCTION — form is a preview</span>
+    </div>
+    <form class="form-card" id="join-form">
+      <h2 class="form-card__title">Membership enquiry</h2>
+      <div class="form-success" id="join-success" hidden>Thank you! Your enquiry has been received — the guild office will usually get back to you within 3 working days.</div>
+      <label class="field">Salon name
+        <input required name="salon" placeholder="e.g. Salon Schnittwerk" autocomplete="organization">
+      </label>
+      <div class="form-row">
+        <label class="field">Contact person
+          <input required name="name" placeholder="First and last name" autocomplete="name">
+        </label>
+        <label class="field">Number of employees
+          <select name="size">
+            <option>0</option><option>1–5</option><option>6–10</option><option>11–20</option><option>21–30</option><option>31+</option>
+          </select>
+        </label>
+      </div>
+      <div class="form-row">
+        <label class="field">Email
+          <input required type="email" name="email" placeholder="name@salon.de" autocomplete="email">
+        </label>
+        <label class="field">Phone
+          <input name="tel" placeholder="0711 …" autocomplete="tel">
+        </label>
+      </div>
+      <label class="field">Message (optional)
+        <textarea name="msg" rows="4" placeholder="Your questions for us …"></textarea>
+      </label>
+      <label class="check">
+        <input required type="checkbox">I have read the privacy policy and consent to my data being processed to handle this enquiry.
+      </label>
+      <button type="submit" class="btn-submit">SEND ENQUIRY</button>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__grid">
+    <div class="site-footer__brand">
+      <img src="../assets/logo-f.png" alt="" width="42" height="54" class="site-footer__logo">
+      <span class="site-footer__name">die FRISEUR<em>INNUNG</em></span>
+      <p class="site-footer__claim">The strong community of hairdressing salons in Stuttgart and Ludwigsburg.</p>
+      <div class="site-footer__social">
+        <a href="#">Instagram</a><a href="#">Facebook</a>
+      </div>
+    </div>
+    <div class="site-footer__col">
+      <span class="site-footer__heading">Stuttgart Office</span>
+      <span>Lautenschlagerstr. 3<br>70173 Stuttgart</span>
+      <span>Tel. 0711-6407074 · Fax 0711-6400999<br><a href="mailto:hair@die-friseurinnung.de">hair@die-friseurinnung.de</a></span>
+      <span class="site-footer__hours">Mon + Tue 9 am – 3 pm</span>
+    </div>
+    <div class="site-footer__col">
+      <span class="site-footer__heading">Ludwigsburg Branch Office</span>
+      <span>Seestraße 16<br>71638 Ludwigsburg</span>
+      <span>Tel. 0711-6407074<br><a href="mailto:hair@die-friseurinnung.de">hair@die-friseurinnung.de</a></span>
+      <span class="site-footer__hours">Tue + Fri 9 am – 7 pm · Sat 9 am – 3 pm</span>
+      <span class="site-footer__hint">Examination folders and training record books are sold at the Ludwigsburg office.</span>
+    </div>
+    <div class="site-footer__col">
+      <span class="site-footer__heading">Quick Links</span>
+      <a href="innung.html" class="site-footer__nav-link">The Guild</a>
+      <a href="ausbildung.html" class="site-footer__nav-link">Training</a>
+      <a href="fortbildung.html" class="site-footer__nav-link">Seminars</a>
+      <a href="mitglied-werden.html" class="site-footer__nav-link">Become a Member</a>
+      <a href="login.html" class="site-footer__nav-link">Member Area · Login</a>
+    </div>
+  </div>
+  <div class="site-footer__bottom">
+    <span>© 2026 Die Friseurinnung Stuttgart</span>
+    <span class="site-footer__legal"><a href="#">Legal Notice</a><a href="#">Privacy Policy</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -168,6 +168,10 @@ img {
   color: var(--muted-light);
 }
 
+a.lang-switch__item:hover {
+  color: var(--ink);
+}
+
 .lang-switch__item--active {
   background: var(--ink);
   color: #fff;

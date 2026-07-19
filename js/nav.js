@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const setOpen = (open) => {
     document.body.classList.toggle('nav-open', open);
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+    toggle.setAttribute('aria-label', open
+      ? (toggle.dataset.labelClose || 'Menü schließen')
+      : (toggle.dataset.labelOpen || 'Menü öffnen'));
   };
 
   toggle.addEventListener('click', () => {
