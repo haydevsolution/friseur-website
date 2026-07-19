@@ -176,21 +176,11 @@
   flex-direction: column;
 }
 
-.person-card__media {
+.person-card__photo {
   height: 220px;
-  background: repeating-linear-gradient(45deg, var(--sand), var(--sand) 12px, #ece3d7 12px, #ece3d7 24px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.person-card__media span {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--muted-light);
-  background: #fff;
-  padding: 6px 10px;
-  border-radius: 6px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .person-card__body {
