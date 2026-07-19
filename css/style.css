@@ -372,7 +372,7 @@ a.lang-switch__item:hover {
 
 .hero {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
   gap: 48px;
   padding: clamp(44px, 7vw, 84px) var(--pad-x) clamp(40px, 6vw, 64px);
   background: var(--bg);
@@ -425,7 +425,7 @@ a.lang-switch__item:hover {
 .hero__image {
   height: clamp(280px, 36vw, 400px);
   border-radius: 16px;
-  background: url('../assets/hero.png') center/cover no-repeat;
+  background: url('../assets/hero.jpg') center/cover no-repeat;
 }
 
 /* ==========================================================================
@@ -471,7 +471,7 @@ a.lang-switch__item:hover {
 
 .poster {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: clamp(28px, 5vw, 56px);
   background: var(--orange);
   padding: clamp(44px, 7vw, 72px) var(--pad-x);
@@ -577,7 +577,7 @@ a.lang-switch__item:hover {
 
 .values__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
   gap: 32px;
 }
 
@@ -614,7 +614,7 @@ a.lang-switch__item:hover {
 
 .quicklinks {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
   gap: 16px;
   margin-top: 44px;
 }
@@ -667,7 +667,7 @@ a.lang-switch__item:hover {
 
 .quote {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 48px;
   padding: clamp(40px, 6vw, 56px) var(--pad-x);
   background: var(--ink);
@@ -735,7 +735,7 @@ a.lang-switch__item:hover {
 
 .site-footer__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 36px;
   padding: 56px var(--pad-x) 40px;
 }
