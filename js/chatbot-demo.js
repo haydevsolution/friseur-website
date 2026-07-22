@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { role: 'user', text: 'Wie lange dauert die praktische Prüfung in Teil 1?' },
     { role: 'bot',
       text: 'Die praktische Prüfung in Teil 1 der Gesellenprüfung dauert in Baden-Württemberg höchstens 4 Stunden. Sie umfasst Haarschnitt, klassische Föhnfrisur und eine Pflegebehandlung.',
-      source: 'Prüfungsordnung BW · § 2 · Seite 1' },
+      source: 'Prüfungsordnung BW · § 4 · Seite 2' },
   ];
 
   const launcher = document.createElement('button');
@@ -73,13 +73,13 @@ document.addEventListener('DOMContentLoaded', () => {
     view.innerHTML = `
       <div class="ki-docview__head">
         <button type="button" class="ki-docview__back">← Zurück zum Chat</button>
-        <a class="ki-docview__pdf" href="assets/beispiel-pruefungsordnung-bw.pdf#page=1" target="_blank" rel="noopener">Original-PDF ↗</a>
+        <a class="ki-docview__pdf" href="assets/beispiel-pruefungsordnung-bw.pdf#page=2" target="_blank" rel="noopener">Original-PDF ↗</a>
       </div>
       <div class="ki-docview__body">
         <div class="ki-docview__title">Prüfungsordnung Friseurhandwerk — Baden-Württemberg</div>
-        <div class="ki-docchunk"><small>§ 1 · Seite 1</small>Diese Prüfungsordnung gilt für die Gesellenprüfung im Friseurhandwerk im Zuständigkeitsbereich der Handwerkskammern in Baden-Württemberg …</div>
-        <div class="ki-docchunk ki-docchunk--hit"><small>ZITIERTE STELLE · § 2 · Seite 1</small>Die praktische Prüfung in Teil 1 der Gesellenprüfung dauert in Baden-Württemberg höchstens 4 Stunden. Sie umfasst die Bereiche Haarschnitt, klassische Föhnfrisur und eine Pflegebehandlung.</div>
-        <div class="ki-docchunk"><small>§ 3 · Seite 1</small>Die Prüfung ist bestanden, wenn mindestens 50 von 100 Punkten erreicht werden …</div>
+        <div class="ki-docchunk"><small>§ 3 · Seite 1</small>Zur Gesellenprüfung wird zugelassen, wer die Ausbildungszeit zurückgelegt hat und wessen Ausbildungsverhältnis in das Lehrlingsverzeichnis eingetragen ist …</div>
+        <div class="ki-docchunk ki-docchunk--hit"><small>ZITIERTE STELLE · § 4 · Seite 2</small>Die praktische Prüfung in Teil 1 der Gesellenprüfung dauert in Baden-Württemberg höchstens 4 Stunden. Sie umfasst die Bereiche Haarschnitt, klassische Föhnfrisur und eine Pflegebehandlung.</div>
+        <div class="ki-docchunk"><small>§ 5 · Seite 2</small>Die praktische Prüfung in Teil 2 dauert höchstens 7 Stunden. Sie umfasst einen modischen Damen- oder Herrenhaarschnitt mit Farbveränderung …</div>
         <div class="ki-docview__note">Design-Vorschau — in der echten KI öffnet sich hier das hinterlegte Originaldokument.</div>
       </div>`;
     view.querySelector('.ki-docview__back').addEventListener('click', () => view.remove());
