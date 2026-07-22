@@ -197,6 +197,28 @@ body.page--dark .ki-launcher {
   color: var(--muted-light);
 }
 
+.ki-chip {
+  align-self: flex-start;
+  max-width: 92%;
+  padding: 11px 16px;
+  border: 1.5px solid var(--orange);
+  border-radius: 16px;
+  border-bottom-left-radius: 4px;
+  background: var(--sand-hover);
+  color: var(--orange-deep);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.ki-chip:hover {
+  background: #ffedd9;
+}
+
 .ki-typing {
   align-self: flex-start;
   display: flex;

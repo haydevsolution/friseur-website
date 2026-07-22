@@ -76,11 +76,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (played) return;
     played = true;
     bubble({ role: 'bot', text: 'Hallo! Ich beantworte Prüfungsfragen — belegt aus den offiziellen Dokumenten deiner Region.' });
-    setTimeout(() => {
+    // Beispielfrage nur als antippbarer Vorschlag — nichts wird automatisch
+    // im Namen des Nutzers gesendet.
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'ki-chip';
+    chip.textContent = 'Beispiel ansehen: „' + DEMO[0].text + '"';
+    chip.addEventListener('click', () => {
+      chip.remove();
       bubble(DEMO[0]);
       const dots = typing();
       setTimeout(() => { dots.remove(); bubble(DEMO[1]); }, 1600);
-    }, 900);
+    });
+    body.appendChild(chip);
+    chip.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }
 
   function setOpen(open) {
