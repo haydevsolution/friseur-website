@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     view.innerHTML = `
       <div class="ki-docview__head">
         <button type="button" class="ki-docview__back">← Zurück zum Chat</button>
-        <span class="ki-docview__pdf">Original-PDF ↗</span>
+        <a class="ki-docview__pdf" href="assets/beispiel-pruefungsordnung-bw.pdf#page=1" target="_blank" rel="noopener">Original-PDF ↗</a>
       </div>
       <div class="ki-docview__body">
         <div class="ki-docview__title">Prüfungsordnung Friseurhandwerk — Baden-Württemberg</div>
